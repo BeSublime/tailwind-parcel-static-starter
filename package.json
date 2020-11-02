@@ -1,0 +1,32 @@
+{
+  "name": "simple-static",
+  "version": "0.0.1",
+  "description": "Simple static HTML page with HTML5 Boilerplate and Tailwind CSS.",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Cory Evan Wright <coryevan@gmail.com>",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeSublime/simple-static.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BeSublime/simple-static/issues"
+  },
+  "homepage": "https://github.com/BeSublime/simple-static#readme",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}
