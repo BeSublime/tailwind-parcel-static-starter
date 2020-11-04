@@ -7,7 +7,9 @@ Easily deployable to GitHub pages or any other static site host.
 Click the "Use this template" button at the top of the [main page](https://github.com/BeSublime/simple-static) of the repository on GitHub.
 Edit the contents of index.html and/or main.js and deploy to your favorite static host.
 
-For quick access, you can also go to https://github.com/BeSublime/simple-static/generate
+For quick access, you can also go to https://github.com/BeSublime/simple-static-boilerplate/generate
 
 ## Development
-For easy and quick serving of the index.html page with live reloading, [Live Server](https://github.com/tapio/live-server) is a great option.
+Run `npm run serve` while working on HTML & CSS.
+
+Run `npm run production` before committing the built CSS and/or before pushing the `/public` directory live.
