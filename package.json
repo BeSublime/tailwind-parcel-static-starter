@@ -4,7 +4,12 @@
 	"description": "Simple static HTML page with HTML5 Boilerplate and Tailwind CSS.",
 	"license": "MIT",
 	"author": "Cory Evan Wright <coryevan@gmail.com>",
-	"scripts": {},
+	"scripts": {
+		"serve": "cross-env NODE_ENV=development concurrently \"postcss public/css/main.css -o public/build/main.css --watch\"  \"live-server ./public\"",
+		"development": "cross-env NODE_ENV=development postcss public/main.css -o public/build/main.css",
+		"production": "cross-env NODE_ENV=production postcss public/main.css -o public/build/main.min.css",
+		"start": "npm run serve"
+	},
 	"devDependencies": {
 		"concurrently": "^5.3.0",
 		"cross-env": "^7.0.2",
