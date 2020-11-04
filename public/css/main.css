@@ -1,3 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* add your global styles here; use tailwind classes for component/element styles */
