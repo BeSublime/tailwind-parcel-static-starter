@@ -5,8 +5,9 @@ module.exports = {
 	},
 	purge: {
 		mode: 'all',
-		content: ['index.html']
+		content: ['./public/*.html']
 	},
+	// be sure to clear the .cache directory if you make changes to the items below
 	theme: {
 		extend: {},
 	},
