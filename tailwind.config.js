@@ -1,16 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	future: {
-		// removeDeprecatedGapUtilities: true,
-		// purgeLayersByDefault: true,
-	},
-	purge: {
-		mode: 'all',
-		content: ['./public/*.html']
-	},
-	// be sure to clear the .cache directory if you make changes to the items below
+	content: [
+	  "./src/**/*.{html,js,ts,jsx,tsx}",
+	],
 	theme: {
-		extend: {},
+	  extend: {},
 	},
-	variants: {},
 	plugins: [],
-}
+  }

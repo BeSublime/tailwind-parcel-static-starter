@@ -5,15 +5,15 @@
 	"license": "MIT",
 	"author": "Cory Evan Wright <coryevan@gmail.com>",
 	"scripts": {
-		"dev": "cross-env parcel public/index.html",
-		"build": "cross-env NODE_ENV=production parcel build public/*.html -d docs --log-level 4 --public-url ./ --no-cache --no-content-hash"
+		"dev": "cross-env parcel src/index.html",
+		"build": "cross-env NODE_ENV=production parcel build src/*.html --dist-dir docs --log-level verbose --public-url ./ --no-cache --no-content-hash"
 	},
 	"devDependencies": {
+		"@parcel/packager-raw-url": "^2.8.3",
+		"@parcel/transformer-webmanifest": "^2.8.3",
 		"cross-env": "^7.0.2",
-		"parcel": "^1.12.4"
-	},
-	"dependencies": {
-		"autoprefixer": "^9.8.6",
-		"tailwindcss": "^1.9.6"
+		"parcel": "^2.8.3",
+		"postcss": "^8.4.21",
+		"tailwindcss": "^3.2.7"
 	}
 }
